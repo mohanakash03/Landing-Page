@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pepsi Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="sec">
+        <header>
+            <a href="#"><img src="logo.png" class="logo"</a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Whats's New</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2>Quench your thirst<br><span>Deliciously!</span></h2>
+                <p>Welcome to Pepsi – where taste meets refreshment! Indulge in our iconic lineup of fizzy beverages crafted to invigorate your senses and quench your thirst. From the classic Pepsi cola to exhilarating flavors like Pepsi Wild Cherry and Pepsi Mango, we offer an array of choices to suit every palate. Dive into the world of Pepsi and experience the perfect blend of bold flavor and invigorating bubbles that have delighted generations. Join us in celebrating moments big and small with the ultimate companion for refreshment. Welcome to the Pepsi family – sip, savor, and refresh with us!</p>
+                <a href="#">View All Products</a>
+            </div>
+            <div class="imgbox">
+                <img src="pepsi001.png" class="pepsi">
+
+            </div>
+        </div>
+
+        <ul class="thumb">
+            <li><img src="pepsi001.png" onclick="imgSlider('pepsi001.png');changeBgColor('#0062be')"></li>
+            <li><img src="pepsi002.png" onclick="imgSlider('pepsi002.png');changeBgColor('#e60c2c')"></li>
+            <li><img src="pepsi003.png" onclick="imgSlider('pepsi003.png');changeBgColor('#1e1e1e')"></li>
+        </ul>
+      <ul class="sci">
+        <li><a href="#"><img src="facebook.png"></a></li>
+        <li><a href="#"><img src="twitter.png"></a></li>
+        <li><a href="#"><img src="instagram.png"></a></li>
+      </ul>  
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.pepsi').src= anything;
+        }
+        function changeBgColor(color){
+            const sec = document.querySelector('.sec');
+            sec.style.background = color
+        }
+    </script>
+</body>
+</html>
